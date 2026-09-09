@@ -9,4 +9,10 @@
   <ItemGroup>
     <ProjectReference Include="../../src/TrayApp.Base/TrayApp.Base.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\TrayApp.Sample.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

@@ -1,18 +1,11 @@
-using System.Globalization;
-
 namespace TrayApp.Base.Configuration;
-
-public sealed class TrayApplicationOptions
-{
-    public string ApplicationName { get; init; } = "Tray Application";
-
-    public string Tooltip { get; init; } = "Tray Application";
-
-    public string? SingleInstanceId { get; init; }
-
-    public CultureInfo Culture { get; init; } = CultureInfo.CurrentUICulture;
-
-    public bool AutomatedUpstreamDeployment { get; init; }
-
-    public bool ValidateVersionOnDemand { get; init; } = true;
+using System.Globalization;
+public class TrayApplicationOptions {
+    public string ApplicationName { get; set; } = "Tray Application";
+    public string Tooltip { get; set; } = "Tray Application";
+    public string? SingleInstanceId { get; set; }
+    public CultureInfo Culture { get; set; } = CultureInfo.CurrentUICulture;
+    public bool AutomatedUpstreamDeployment { get; set; }
+    public bool ValidateVersionOnDemand { get; set; } = true;
+    public string? IconPath { get; set; }
 }
